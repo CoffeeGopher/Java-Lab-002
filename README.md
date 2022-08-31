@@ -31,8 +31,26 @@ Take note of the various variables and their data types. Write a brief summary i
 * Its data type
 * and example values you can assign them.
 
+|Name|Type|Example(s)|
+|---------------|----------------|----------------|
+|scriptTemplateLine1|String|`"Hello!"`
+|scriptTemplateLine2|String|`"world!"`
+|scriptTemplateLine3|String|`"There are"`
+|scriptTemplateLine4|String|`"5"`
+|priceless|String|`"strings in this file."`
+|people|int|`5, 2, -3`
+|ticketPrice|float|`3.2f, -5.0f, 82.25f`
+|itemPrice|double|`52.34, 0.0, Double.MAX_VALUE`
+|trueOrFalse|boolean|`True, False`
+|formatter|NumberFormat|`NumberFormat.getCurrencyInstance()`
+
 Next give TWO example variable names and TWO example variable assignments that are *WRONG* and explain why.
 * Hint: your IDE can help you discover these!
+
+|Name|Type|Example(s)|Explanation
+|---------------|----------------|----------------|---|
+|badInt|int|`"3"`|Java does not automatically convert strings to ints.
+|badFloat|float|`0.0`|When not given the 'f' at the end, floating point values are seen as doubles by Java. Attempting to run this will give you a compile-time error.
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
